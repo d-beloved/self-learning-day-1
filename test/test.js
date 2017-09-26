@@ -1,9 +1,9 @@
 import { expect } from 'chai';
-import churchMember from '../src/main.js';
+import churchMember from '../src/main';
 
 describe('Testing churchMember class function',()=>{
 
-  const churchMember = new churchMember('Tayo','Christ Like Assembly');
+  let ChurchMember = new churchMember('Tayo','Christ Like Assembly');
   it('Should return Tayo',()=>{
     expect(churchMember.getName()).to.equal('Tayo');
   })
